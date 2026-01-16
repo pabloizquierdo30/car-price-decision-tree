@@ -1,0 +1,31 @@
+# --- Entornos Virtuales ---
+# Ignoramos la carpeta de 'uv'. Contiene las librerías instaladas.
+# No se sube porque cada usuario debe crear la suya con 'uv venv'.
+.venv/
+env/
+venv/
+
+# --- Python ---
+# Archivos que genera Python automáticamente al ejecutar el código.
+__pycache__/
+*.pyc
+
+# --- Jupyter Notebooks ---
+# Archivos temporales que crea VS Code cuando abres un notebook.
+.ipynb_checkpoints/
+
+# --- Datos (Data) ---
+# Ignoramos los CSVs originales si son muy pesados. 
+# Es mejor que el usuario los descargue de la fuente oficial.
+# data/raw/*.csv los quito porque pesan poco 
+# data/processed/*.csv los quito porque pesan poco
+
+# --- Modelos ---
+# Los archivos .pkl (tu árbol de decisión guardado) pueden pesar mucho.
+# Se suelen ignorar y solo se suben las versiones finales.
+models/*.pkl
+
+# --- Sistema Operativo ---
+# Archivos basura que crean Windows y Mac automáticamente.
+.DS_Store
+Thumbs.db
